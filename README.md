@@ -1,6 +1,8 @@
 # Smart_gardener
-Smart gardener is a project that involves microcontrollers and sensors taking care of plants by measuring air temmperature, humidity, soil moisture and watering them by using reservoirs atached to servos.
-This is repository created for project and contains all necessesary codes for it and required information/instructions to replicate it.
+**Smart gardener** is a project that involves microcontrollers and sensors taking care of plants by measuring air temperature, humidity, soil moisture and watering them by using reservoirs attached to servos.
+This is repository created for project and contains all necessary codes for it and required information/instructions to replicate it.
+
+**Overview of the project. ** User through Blynk app on mobile phone receives notifications daily remind to water the plant. By using ON/OFF button in the app, user can initiate water flow to plant. Water supply is controlled by servo motors that are connected to water reservoirs. Additionally, user can see other vital parameters for plant well-being: air temperature, humidity and soil temperature. Data received from sensors in microcontroller is sent to RasPI server through local WiFi.    
 
 Required parts for this project are:
 - At least one [Wemos D1 mini](https://docs.wemos.cc/en/latest/d1/d1_mini.html) or any other ESP8266 based microcontroller.
@@ -8,7 +10,7 @@ Required parts for this project are:
 - Sensors: [DHT22](https://www.waveshare.com/wiki/DHT22_Temperature-Humidity_Sensor) air temperature and humidity sensor. [DS18B20](https://wiki.eprolabs.com/index.php?title=DS18B20_Temperature_Sensor) waterproof temperature sensor. 
 - Actuators: [TG9e](https://servodatabase.com/servo/turnigy/tg9e) for water supply.
 - Reservoirs to store water.
-- WiFi access point. In this project local WiFi through seperate [router](https://www.tp-link.com/us/home-networking/wifi-router/tl-wr740n/).
+- WiFi access point. In this project local WiFi through separate [router](https://www.tp-link.com/us/home-networking/wifi-router/tl-wr740n/).
 
 ## Hardware
 1. Sensors and actuators are connected to microcontroller. Following connections are made as depicted in ![picture](images/connected_sensors.png).
@@ -18,7 +20,7 @@ Required parts for this project are:
 2. [Blynk](https://blynk.io) local custom server was setup according to instructions from author repository. Java 11 server version and release of `v0.41.13` Step-by-step instructions are available [here](https://github.com/blynkkk/blynk-server).   
 3. Local WiFi network was setup by router. Static IP was assigned to RasPI.
 4. Connection tested by downloading Blynk phone app and connecting to Blynk environment using credentials and IP address of RasPI through default 9443 port. NB! Phone also has to be connected to local WiFI.
-5. Authorization tokens for each Wemos device was aqcuired and placed in the arduino code `smart_gardener.ino` together with WiFi credentials.
+5. Authorization tokens for each Wemos device was acquired and placed in the Arduino code `smart_gardener.ino` together with WiFi credentials.
 6. Following app widgets were used:
  - Labeled value (To display air temperature, humidity and soil moisture)
  - Switch button (To control ON/OFF state of the water supply)
