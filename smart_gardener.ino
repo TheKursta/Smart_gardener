@@ -1,6 +1,6 @@
 /* Attach DHT22 to D6, attach Soil_temp to D3, attach Servo to D5*/
 /* Authentication*/
-char auth[] = "9YzYYPeyX3cMMAIUmsYOj74p_UnphYHB";
+char auth[] = "HERE GOES YOUR AUTH TOKEN";
 char ssid[] = "smart_wifi";
 char pass[] = "honolulu";
 char server[] = "101.101.101.101";

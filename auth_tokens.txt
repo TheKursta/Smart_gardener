@@ -1,0 +1,4 @@
+plant 1: char auth[] = "eZOVRCJl-TfsB0BG_ejQErdqA2GGLUnT";
+plant 2: char auth[] = "9YzYYPeyX3cMMAIUmsYOj74p_UnphYHB";
+plant 3: char auth[] = "hPXFEpmrVwiv-CIrJyD1k_4aSdtlsg5q";
+
